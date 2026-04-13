@@ -1,4 +1,6 @@
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/johannadev738/Web10-Event-Website-Project/badge)](https://scorecard.dev/viewer/?uri=github.com/johannadev738/Web10-Event-Website-Project)
+<br>
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/12519/badge)](https://www.bestpractices.dev/projects/12519)
 
 #Genovia Botanical Banquet Website 🌸
 Participating in course Web101 by Codepath. 
