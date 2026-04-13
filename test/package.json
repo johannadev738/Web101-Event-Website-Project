@@ -1,0 +1,8 @@
+{
+  "name": "web101-event-website-project",
+  "version": "1.0.0",
+  "description": "Single-page event RSVP website",
+  "scripts": {
+    "test": "node test/basic.test.js"
+  }
+}
