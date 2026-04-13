@@ -1,0 +1,822 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+/*MAin Portion*/
+
+
+/*remember to revise notes on find: 
+.1a35 (illuminate text)
+GARAGE: having issue with movibg dark mode to nav bar
+*/
+
+/*----------DARKMODE-SHIFTS-INDEX (below)--------------*/
+/*Light Mode*/
+:root {
+  --text-color: black;
+  /*DARKMODE_White*/
+  background: radial-gradient(ivory, black 520%);
+  --background-color: radial-gradient(ivory, black 520%);
+  /*DARKMODE_darkgreen*/
+  --base-variant: #f0f0f0;
+  /*DARKMODE_darkgreen*/
+  --primary-color: black;
+  /*DARKMODE_darkgreen*/
+
+}
+
+.darkmode {
+  --text-color: white;
+  --background-color: rgb(46, 46, 43);
+  --base-variant: #333;
+  /*DARKMODE_darkgreen*/
+  --primary-color: white;
+  /*DARKMODE_darkgreen*/
+  --accent-color: #ff9800;
+  /*DARKMODE_darkgreen*/
+
+
+}
+
+.cta-button {
+  background-color: var(--accent-color);
+
+}
+
+#theme-switch {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#theme-switch svg {
+  width: 24px;
+  height: 24px;
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
+/*----------DARKMODE-SHIFTS-INDEX (above)--------------*/
+
+body {
+
+  background-color: var(--background-color);
+  /*DARKMODE_darkgreen*/
+  margin: 0px;
+  transition: background-color 0.3s, color 0.3s;
+  border: 0px solid blue; /*proportion purposes*/
+
+}
+
+h1{
+ position: absolute;
+    top: -8px;
+    right: 1050px;
+      color:Black;
+}
+
+hr {
+  height: 3px;
+  width: auto
+}
+
+
+#nav{
+  position: sticky;
+  width: 100%;
+  top: 0%;
+  z-index: 2;
+
+}
+
+#nav .navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+
+  }
+
+
+}
+
+#navTwo {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  
+}
+
+.navigationTwo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: maroon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationTwo li {
+  color: white;
+  font-size: 13px;
+  padding: 2px 5px;
+}
+
+.navigationTwo li a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.navigationTwo li a:hover {
+  background-color: darkred;
+}
+
+/*#navTwo .navigation Two ul {
+  display: flex;
+  justify-content: baseline;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+
+
+
+  li {
+    float: left;
+    padding: 5px 16px;
+    color: gold;
+
+  }
+
+  li a {
+
+    color: lightblue;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+  }
+
+}
+*/
+/*________________________Main Banner________________________*/
+
+#header-img {
+  width: 50px;
+  border-radius: 100px;
+}
+
+/*line86*/
+#imainpost h3 {
+  /* visibility: hidden;*/
+  margin: 0px;
+  padding: 0px;
+  font-size: 0;
+  border: 0px;
+
+}
+
+
+
+
+#imainpost img {
+  width: 98vw;
+  height: auto;
+  margin-top: -15px;
+  margin-bottom: -12px;
+  padding: 0%;
+ border:0px;
+}
+
+/*______________1.Join Us__________________________*/
+#ijoinus {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right:30px;
+  background-color: radial-gradient(ivory, black 520%);
+  padding-top: 20px;
+  padding-bottom: 12px;
+  font-size: 20px;
+
+}
+
+#ijoinus .content {
+  display: flex;
+  flex-direction: row;
+  /* ensures side-by-side */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#ijoinus .text {
+  flex: 1;
+
+  /* allows it to take available space */
+  h3 {
+    text-shadow: 0.3px 0.3px 0.3px rgb(68, 68, 68);
+    /*add this to all text, illuminate quality (note.1a35)*/
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+
+  p {
+    text-shadow: 0.3px 0.3px 0.3px rgb(68, 68, 68);
+    /*add this to all text, illuminate quality (note.1a35)*/
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+}
+
+#ijoinus img {
+  width: px;
+  height: auto;
+  flex-shrink: 0;
+
+  /* prevents image from shrinking */
+}
+
+
+/*______________2.What To Expect__________________________*/
+#iiwhatexpect {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding-left: 40px;
+  background-color: radial-gradient(ivory, black 520%);
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-size: 20px;
+}
+
+#iiwhatexpect .content {
+  display: flex;
+  flex-direction: row;
+  /* ensures side-by-side */
+  align-items: flex-start;
+  gap: 200px;
+}
+
+#iiwhatexpect .text {
+  flex: 1;
+
+  /* allows it to take available space */
+  h3 {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+
+  p {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+}
+
+#iiwhatexpect img {
+  width: 330px;
+  height: auto;
+  flex-shrink: 0;
+  /* prevents image from shrinking */
+}
+
+
+/*___________3.Genovia Essence____________*/
+#iiigessence {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 30px;
+  background-color: radial-gradient(ivory, black 520%);
+  padding-top: 30px;
+  padding-bottom: 22px;
+  font-size:20px;
+}
+
+#iiigessence .content {
+  display: flex;
+  flex-direction: row;
+  /* ensures side-by-side */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#iiigessence .text {
+  flex: 1;
+
+  /* allows it to take available space */
+  h3 {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+
+  p {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+}
+
+#iiigessence img {
+  width: 370px;
+  height: auto;
+  flex-shrink: 0;
+  /* prevents image from shrinking */
+}
+
+/*___________Genovia Colors____________*/
+#ivgcolors {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding-left: 20px;
+  background-color: radial-gradient(ivory, black 520%);
+  padding-top: 20px;
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+#ivgcolors .content {
+  display: flex;
+  flex-direction: row;
+  /* ensures side-by-side */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#ivgcolors .text {
+  flex: 1;
+  /* allows it to take available space */
+  h3 {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+
+  p {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+}
+
+#ivgcolors img {
+  width: 370px;
+  height: auto;
+  flex-shrink: 0;
+  /* prevents image from shrinking */
+}
+
+/*___________5.Queen__________*/
+#vqueen {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding-left: 80px;
+    padding-right: 30px;
+  background-color: radial-gradient(ivory, black 520%);
+  padding-top: 20px;
+  padding-bottom: 12px;
+  font-size:20px;
+}
+
+#vqueen .content {
+  display: flex;
+  flex-direction: row;
+  /* ensures side-by-side */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#vqueen .text {
+  flex: 1;
+
+  /* allows it to take available space */
+  h3 {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+
+  p {
+    color: var(--text-color);
+    /*DARKMODE_White*/
+  }
+}
+
+#vqueen img {
+  width: 220px;
+  height: auto;
+  flex-shrink: 0;
+  /* prevents image from shrinking */
+}
+
+
+
+/*______________Reservation Form__________________________*/
+
+#vi.expectations{
+
+ p{
+  font-color:transparent;
+}
+}
+
+
+#resVideo video {
+  width: 99vw;
+  height: 80vh;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  opacity: 0.58;
+  /* Adjust opacity for a subtle background effect */
+  padding-bottom: 0;
+  margin-top:-10px;
+  margin-bottom: -4px;
+  padding-left: 0px;
+}
+
+/*#form-container {
+  /*Might put picture of genovia
+  z-index: 1;
+  max-width: 500px;
+  margin: auto;
+  margin-top: -200px;
+  background: lightblue;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}*/
+
+#form-container {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height:auto;
+  aspect-ratio: 1/1;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /*Might put picture of genovia*/
+  margin-top: -640px;
+  background: ivory, opacity:0.1;
+  padding: 30px;
+  
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 20px 5px 8px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: white;
+  outline: none;
+  
+}
+
+input:invalid {
+  border: 2px solid red;
+  background-color: #ffe5e5; /* light red background */
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+
+
+.input-container label {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  font-size: 12px;
+  color: black;
+  /*#0071c2*/
+  background-color: white;
+  padding: 0 4px;
+  pointer-events: none;
+}
+
+.checkbox-group {
+  margin: 20px 0;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* === Submit Button === */
+button[type="submit"],
+#close-modal {
+  width: 100%;                       /* Full width */
+  padding: 12px;                     /* More space */
+  background-color: #a8ba69;         /* Original green */
+  color: rgb(255, 255, 255);         /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;                   /* Bigger text */
+  font-family: inherit;              /* Match site font */
+}
+
+/* Hover effect (optional, keep it!) */
+button:hover {
+  opacity: 0.9;
+}
+
+
+/* === Modal Styling === */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+
+  /* Flex settings only when shown */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex !important;
+}
+
+.modal-container {
+  background-color: #dff0d8;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #4cae4c;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+#success-message {
+  font-size: 24px; /* or try 28px, 32px, etc. */
+  font-weight: bold;
+}
+
+
+#spinning-flower {
+  font-size: 40px;
+  margin-bottom: 15px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#attending h3{
+  position: absolute;
+  top: 1940px;   /* Smaller number moves it up */
+  right: 100px;
+  font-weight: bold;
+  font-size:38px;
+}
+
+#signup-list{
+  list-style-type:none;
+  position: absolute;
+  top: 2010px;   /* Smaller number moves it up */
+  right: 190px;
+  font-weight: bold;
+  font-size:20px;
+}
+
+#order-message{
+  position: absolute;
+  top: 2258px;   /* Smaller number moves it up */
+  right: 540px;
+  font-weight: bold;
+  z-index: 2;
+  font-size: small;
+  color:green;
+}
+
+
+#pleasersvp{
+ position: absolute;
+  top: 1940px;   /* Smaller number moves it up */
+  right: 1000px;
+  font-weight: bold;
+  font-size:28px;
+}
+
+
+
+
+
+
+/*_______________Base Directory_______________*/
+
+#gbValues-container {
+  text-align: center; /* center the group */
+  margin: 20px 0;
+  /*border: ;*/
+  padding-top:5px;
+  padding-bottom:1px;
+  margin: 0px;
+  background-color: rgb(145, 134, 114);
+  background-image: linear-gradient(#918672, #B6B2a5); /* two versions: Hex: #918672 for RGB: rgb(145, 134, 114)*/
+}
+
+.gbValues ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap:10px; /* space between images */
+  flex-wrap: wrap; /* allow wrap on small screens */
+}
+
+.gbValues li img {
+  max-width: 300px; /* adjust as needed */
+  height: auto;
+}
+
+
+/*
+#gbValues-container{
+
+  position: sticky;
+  width: 100%;
+  top: 0%;
+}
+
+#gbValues-container .gbValues ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+
+  li {
+    float: left;
+  }
+
+  #gbValues img{
+    width: 220px;
+  height: auto;
+  flex-shrink: 0;
+  }
+}
+*/
+#baseDirectory {
+  border-top: 0px solid red;
+  background-color: #B6B2a5;
+  padding-top:40px;
+  padding-bottom: 20px;
+  display:flex;
+  justify-content: center;
+  font-size: 20px;
+
+  input{
+    border: 2px solid #918672;
+  background-color: white;
+  }
+ 
+}
+
+.rere {
+  color: transparent;
+  font-size: 0;
+ 
+
+}
+.reres {
+  color: transparent;
+  font-size: 0;
+
+ 
+
+}
+
+
+.footer-container {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* Align top of both columns */
+  gap: 60px;
+  padding: 20px;
+  padding-left:100px;
+  border: 2px solid #B6B2a5;
+  background: #B6B2a5;
+
+
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 29px 80px;
+  padding-top: 40px;
+  font-size:20px;
+
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: underline;
+ /* border: 2px solid green;*/
+
+}
+
+
+.genoviaCrest img{
+  width:150px;
+  height:auto;
+  margin-left:380px;
+  margin-top:-20px;
+  padding:0px;
+  margin-right:0px;
+  /*border: 2px solid black;*/
+
+
+}
+
+
+.rectanglea{
+  border: 3px solid rgb(123, 109, 52);
+  background-color: rgb(123, 109, 52);
+  margin-right: 15px;
+  margin-left: -58px;
+  padding-bottom: 170px;
+  padding-top: 5px;
+  margin-top: -10px;
+  border-radius: 20%;
+  p{
+    color:transparent;
+    font-size:3px;
+  }
+}
+
+
+.footercontact {
+  /*border: 2px solid green;*/
+  margin-top: -15px;
+  /* Ensure no extra margin pushing it down */
+  margin-left: -55px;
+}
