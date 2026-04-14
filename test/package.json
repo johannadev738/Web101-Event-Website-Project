@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Single-page event RSVP website",
   "scripts": {
-    "test": "node test/basic.test.js"
+    "test": "node test/basic.test.js",
+    "lint": "eslint *.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
   }
 }
