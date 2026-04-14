@@ -4,7 +4,7 @@
 
 #Genovia Botanical Banquet Website 🌸
 Participating in course Web101 by Codepath. 
-<br>
+<br> 
 This website was built using HTML, CSS, and Javascript. 
 
 # Web101-Event-Website-Project
