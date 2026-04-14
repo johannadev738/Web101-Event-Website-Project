@@ -7,7 +7,7 @@ Participating in course Web101 by Codepath.
 <br> 
 This website was built using HTML, CSS, and Javascript. 
 
-# Web101-Event-Website-Project
+# Web101-Event-Website-Project 
 
 A single-page event RSVP website built with HTML, CSS, and JavaScript. It allows visitors to view event information and submit an RSVP through the page interface.
 
